@@ -1,0 +1,30 @@
+Locize translation conventions
+==============================
+
+This project's translations live in Locize, reachable via the Locize MCP server
+(https://mcp.locize.app). When translating, reviewing, or editing user-facing strings,
+use the Locize context tools (read-only, `read` scope) so output matches the project's
+terminology, voice, and prior decisions.
+
+Before translating or reviewing a string:
+- get_glossary(projectId, languages: "<source>,<target>") — use each concept's `preferred`
+  target term; never use a `forbidden` term; `allowed` are acceptable variants.
+- get_styleguide(projectId, languages: "<target>") — follow tone, formality, targetAudience,
+  usage/localization rules (use guides.<target> if present, else guides.__all).
+- search_translation_memory(projectId, source, sourceLanguage, targetLanguages) — reuse a
+  high-score `target` (≈1 is exact) instead of inventing a new translation.
+- get_screenshot_context(projectId, namespace, key) — when a string is ambiguous, look at
+  where it appears and the available space first.
+
+Reviewing a PR for terminology drift (no translation needed):
+- get_glossary(projectId, languages: "<source>") — flag any new/changed source string that
+  contains a `forbidden` term; suggest the `preferred` term instead.
+
+Rules:
+- Use `preferred` terms; treat `forbidden` terms as never-allowed.
+- Matching terms against text is your job; terms are verbatim (case as stored). Match
+  case-insensitively for lowercase terms; respect case for proper nouns.
+- Don't guess terminology or tone — fetch it. Empty result = none configured; fall back to
+  sensible defaults and say so.
+- These tools are read-only; pushing keys/updates uses report_missing_keys /
+  update_translations (`write` scope).
