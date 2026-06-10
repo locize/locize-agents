@@ -23,6 +23,14 @@ matches the project's terminology, voice, and prior decisions.
 Call `get_glossary(projectId, languages: "<source>")` and flag any new/changed **source**
 string that contains a `forbidden` term; suggest the `preferred` term as the fix.
 
+## Localizing an app end-to-end (no i18next setup yet)
+
+For localizing an app from scratch (hardcoded strings, no i18next setup), run
+`npx i18next-cli localize --print-agent-prompt` and follow the printed steps —
+detect → instrument → extract → connect to Locize → AI-translate → download. The prompt
+is version-matched to the installed CLI; regenerate it from the command instead of
+keeping a copy here.
+
 ## Rules
 
 - Use `preferred` terms; treat `forbidden` terms as never-allowed.

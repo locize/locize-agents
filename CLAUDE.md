@@ -29,6 +29,20 @@ Call `get_glossary(projectId, languages: "<source>")` and, for every new or chan
 language's `preferred` term as the fix. This is the fastest way to keep terminology
 consistent — do it on PRs even when no translation is involved.
 
+## Localizing an app end-to-end (no i18next setup yet)
+
+If the task is to localize an app from scratch (hardcoded strings, no i18next setup),
+don't improvise the flow. Run:
+
+```bash
+npx i18next-cli localize --print-agent-prompt
+```
+
+and follow the printed steps — detect → instrument → extract → connect to Locize →
+AI-translate → download. The prompt is version-matched to the installed CLI; always
+regenerate it from the command instead of keeping a copy here, so it never drifts from
+what the CLI does.
+
 ## Rules
 
 - Use `preferred` terms; treat `forbidden` terms as never-allowed.

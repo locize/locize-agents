@@ -20,6 +20,12 @@ Reviewing a PR for terminology drift (no translation needed):
 - get_glossary(projectId, languages: "<source>") — flag any new/changed source string that
   contains a `forbidden` term; suggest the `preferred` term instead.
 
+Localizing an app end-to-end (no i18next setup yet):
+- Run `npx i18next-cli localize --print-agent-prompt` and follow the printed steps —
+  detect → instrument → extract → connect to Locize → AI-translate → download.
+- The prompt is version-matched to the installed CLI; regenerate it from the command
+  instead of keeping a copy in this file.
+
 Rules:
 - Use `preferred` terms; treat `forbidden` terms as never-allowed.
 - Matching terms against text is your job; terms are verbatim (case as stored). Match

@@ -54,3 +54,22 @@ All read-only, `read` scope:
   stored).
 
 See [CLAUDE.md](./CLAUDE.md) for the full rule text.
+
+## Localizing an app end-to-end
+
+The conventions above assume an existing Locize project. To take an app from hardcoded
+strings to fully localized (detect → instrument → extract → connect to Locize →
+AI-translate → download), the canonical agent flow ships with
+[i18next-cli](https://github.com/i18next/i18next-cli):
+
+```bash
+npx i18next-cli localize --print-agent-prompt
+```
+
+Paste the printed prompt into your agent, or let it run the command itself. The prompt is
+version-matched to the installed CLI — regenerate it from the command rather than keeping
+a copy in your conventions, so it never drifts from what the CLI actually does. (Without
+an agent, `npx i18next-cli localize` runs the same flow as one interactive command.)
+
+More: [launch post](https://www.locize.com/blog/i18next-cli-localize?from=locize-agents_readme__localize)
+· [CLI docs](https://www.locize.com/docs/integration/cli?from=locize-agents_readme__localize).
