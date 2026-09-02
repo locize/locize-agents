@@ -1,15 +1,6 @@
 ---
 name: locize-translation-conventions
-description: >-
-  Translate, review and lint user-facing strings to a project's own
-  terminology, tone and prior decisions using the Locize MCP context tools
-  (glossary, style guide, translation memory, screenshot context). Use when
-  the user asks to translate strings or keys, review or proofread a
-  translation, check terminology or glossary compliance, keep translations
-  consistent, apply the style guide, reuse existing translations, or lint a
-  pull request for forbidden terms, in a project whose translations live in
-  Locize. Not for setting i18n up from scratch; that is the
-  i18next-localization skill.
+description: "Translate, review and lint user-facing strings to a project's own terminology, tone and prior decisions using the Locize MCP context tools (glossary, style guide, translation memory, screenshot context). Use when the user asks to translate strings or keys, review or proofread a translation, check terminology or glossary compliance, keep translations consistent, apply the style guide, reuse existing translations, or lint a pull request for forbidden terms, in a project whose translations live in Locize. Not for setting i18n up from scratch; that is the i18next-localization skill."
 ---
 
 # Locize translation conventions
