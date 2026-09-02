@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "locize": {
+      "type": "streamable-http",
+      "url": "https://mcp.locize.app"
+    }
+  }
+}

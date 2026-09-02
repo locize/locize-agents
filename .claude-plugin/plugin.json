@@ -1,0 +1,11 @@
+{
+  "name": "locize",
+  "displayName": "Locize",
+  "version": "1.0.0",
+  "description": "Localize an app with i18next and Locize: set up i18n end-to-end (stack detection, wrapping strings in t(), key extraction, sync, AI translation), translate and review to the project's glossary, style guide and translation memory, and reach the Locize translation management system over MCP.",
+  "author": { "name": "Locize", "url": "https://www.locize.com" },
+  "homepage": "https://www.locize.com/docs/integration/mcp",
+  "repository": "https://github.com/locize/locize-agents",
+  "license": "MIT",
+  "keywords": ["i18n", "i18next", "localization", "translation", "locize", "mcp"]
+}

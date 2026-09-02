@@ -21,6 +21,37 @@ npx skills add i18next/i18next-cli
 It ships with [i18next-cli](https://github.com/i18next/i18next-cli) so it stays version-matched
 to the commands it drives. The rest of this repo is what governs the translations afterwards.
 
+## Install as a plugin
+
+Everything in this repo, plus the `i18next-localization` skill and the Locize MCP server, ships
+as one plugin. The MCP server authenticates via OAuth on first use (or a
+[Personal Access Token](https://www.locize.com/docs/integration/personal-access-tokens) if you
+prefer to configure it by hand).
+
+```bash
+# Claude Code
+/plugin marketplace add locize/locize-agents
+/plugin install locize@locize
+
+# GitHub Copilot CLI (reads the same plugin layout)
+copilot plugin marketplace add locize/locize-agents
+
+# Gemini CLI
+gemini extensions install https://github.com/locize/locize-agents
+
+# Cursor: Settings > Plugins > add from GitHub, or the Cursor Marketplace listing
+```
+
+What you get:
+
+| Skill / server | What it does |
+|---|---|
+| `i18next-localization` | Hardcoded strings to a localized app (vendored from [i18next-cli](https://github.com/i18next/i18next-cli/tree/main/skills/i18next-localization); refresh with `scripts/sync-skill.sh`) |
+| `locize-translation-conventions` | Translate, review and lint terminology against the project's glossary, style guide and translation memory |
+| MCP server `locize` | `https://mcp.locize.app`: 26 tools for translations, context (glossary, style guide, TM, screenshots) and versions |
+
+Privacy policy: <https://www.locize.com/privacy>. Support: <https://www.locize.com/support> or support@locize.com.
+
 ## Conventions
 
 This repo is the canonical home of the agent-convention snippets. Drop the one that

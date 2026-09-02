@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "locize": {
+      "type": "http",
+      "url": "https://mcp.locize.app"
+    }
+  }
+}

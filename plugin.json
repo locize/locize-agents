@@ -1,0 +1,11 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "locize",
+  "version": "1.0.0",
+  "description": "Localize an app with i18next and Locize: set up i18n end-to-end, translate and review to the project's glossary, style guide and translation memory, and reach the Locize translation management system over MCP.",
+  "author": { "name": "Locize", "url": "https://www.locize.com" },
+  "homepage": "https://www.locize.com/docs/integration/mcp",
+  "repository": "https://github.com/locize/locize-agents",
+  "license": "MIT",
+  "keywords": ["i18n", "i18next", "localization", "translation", "locize", "mcp"]
+}

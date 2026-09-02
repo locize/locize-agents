@@ -1,0 +1,32 @@
+{
+  "name": "locize",
+  "owner": {
+    "name": "Locize",
+    "url": "https://www.locize.com",
+    "email": "support@locize.com"
+  },
+  "metadata": {
+    "description": "Locize plugins for AI coding agents: i18next localization, translation conventions and the Locize MCP server.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "locize",
+      "source": "./",
+      "version": "1.0.0",
+      "description": "i18next localization skill, Locize translation conventions and the Locize MCP server (translations, glossary, style guide, translation memory, screenshots) in one plugin.",
+      "category": "productivity",
+      "keywords": [
+        "i18n",
+        "i18next",
+        "localization",
+        "translation",
+        "locize",
+        "mcp"
+      ],
+      "homepage": "https://www.locize.com/docs/integration/mcp",
+      "repository": "https://github.com/locize/locize-agents",
+      "license": "MIT"
+    }
+  ]
+}
