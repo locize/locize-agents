@@ -116,8 +116,10 @@ npx skills add i18next/i18next-cli --skill i18next-localization
 
 Then just ask: *"add i18n to this project"*. The skill drives
 [i18next-cli](https://github.com/i18next/i18next-cli), which does AST-based string
-wrapping rather than having the agent edit files by hand, and routes per-stack via
-[`references/stacks.md`](https://github.com/i18next/i18next-cli/blob/main/skills/i18next-localization/references/stacks.md).
+wrapping rather than having the agent edit files by hand, routes per-stack via
+[`references/stacks.md`](https://github.com/i18next/i18next-cli/blob/main/skills/i18next-localization/references/stacks.md),
+and covers ICU MessageFormat and MF2 projects via
+[`references/icu-mf2.md`](https://github.com/i18next/i18next-cli/blob/main/skills/i18next-localization/references/icu-mf2.md).
 
 Without the skill, the same flow is one command:
 
