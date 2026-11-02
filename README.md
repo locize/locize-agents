@@ -50,6 +50,12 @@ What you get:
 | `locize-translation-conventions` | Translate, review and lint terminology against the project's glossary, style guide and translation memory |
 | MCP server `locize` | `https://mcp.locize.app`: tools for translations, context (glossary, style guide, TM, screenshots), quality review and releases |
 
+What the plugin runs and sends:
+
+- The MCP server `locize` connects to `https://mcp.locize.app` after you sign in with OAuth, and reads and writes your Locize projects with your own permissions.
+- The `i18next-localization` skill has the agent run [i18next-cli](https://github.com/i18next/i18next-cli) with `npx`, which downloads it from the npm registry. When you choose to connect a Locize project, the CLI uploads your translation files to the Locize API (`api.locize.app`) with that project's API key and downloads translations from Locize; without Locize it works on your local files only.
+- Nothing else: no telemetry, no other services.
+
 Privacy policy: <https://www.locize.com/privacy>. Support: <https://www.locize.com/support> or support@locize.com.
 
 ## Conventions
