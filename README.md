@@ -48,7 +48,7 @@ What you get:
 |---|---|
 | `i18next-localization` | Hardcoded strings to a localized app (vendored from [i18next-cli](https://github.com/i18next/i18next-cli/tree/main/skills/i18next-localization); refresh with `scripts/sync-skill.sh`) |
 | `locize-translation-conventions` | Translate, review and lint terminology against the project's glossary, style guide and translation memory |
-| MCP server `locize` | `https://mcp.locize.app`: 26 tools for translations, context (glossary, style guide, TM, screenshots) and versions |
+| MCP server `locize` | `https://mcp.locize.app`: tools for translations, context (glossary, style guide, TM, screenshots), quality review and releases |
 
 Privacy policy: <https://www.locize.com/privacy>. Support: <https://www.locize.com/support> or support@locize.com.
 
