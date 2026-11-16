@@ -46,7 +46,7 @@ What you get:
 
 | Skill / server | What it does |
 |---|---|
-| `i18next-localization` | Hardcoded strings to a localized app (vendored from [i18next-cli](https://github.com/i18next/i18next-cli/tree/main/skills/i18next-localization); refresh with `scripts/sync-skill.sh`) |
+| `i18next-localization` | Hardcoded strings to a localized app (vendored from [i18next-cli](https://github.com/i18next/i18next-cli/tree/main/skills/i18next-localization); refresh as [MAINTAINING.md](./MAINTAINING.md) says) |
 | `locize-translation-conventions` | Translate, review and lint terminology against the project's glossary, style guide and translation memory |
 | MCP server `locize` | `https://mcp.locize.app`: tools for translations, context (glossary, style guide, TM, screenshots), quality review and releases |
 
