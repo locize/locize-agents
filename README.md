@@ -62,13 +62,12 @@ Privacy policy: <https://www.locize.com/privacy>. Support: <https://www.locize.c
 
 This repo is the canonical home of the agent-convention snippets. Drop the one that
 matches your tool into your project, or copy the shared rules into your existing
-`CLAUDE.md` / `AGENTS.md` / `.cursorrules`.
+`CLAUDE.md` / `AGENTS.md`.
 
 - [`CLAUDE.md`](./CLAUDE.md) — for Claude Code
-- [`AGENTS.md`](./AGENTS.md) — generic (Codex, and tools that read AGENTS.md)
-- [`.cursorrules`](./.cursorrules) — for Cursor
+- [`AGENTS.md`](./AGENTS.md) — generic (Cursor, Codex, and other tools that read AGENTS.md)
 
-They all carry the same rules; pick the file your tool reads.
+Both carry the same rules; pick the file your tool reads.
 
 ## Connect the Locize MCP server
 

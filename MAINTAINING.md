@@ -23,7 +23,7 @@ Two edits, nothing else:
 
 The whole repo is the plugin, so every file in it ships with the plugin. From an organization that isn't Verified, the directory refuses the version if any file breaks these rules:
 
-- Only Markdown, text, JSON, YAML and PNG, JPEG, GIF or WebP images.
+- Only Markdown, text, JSON, YAML and PNG, JPEG, GIF, WebP or ICO images, each with its extension; `LICENSE`, a README, `.gitignore` and the plugin icon are the exceptions. 1.0.2 was refused with `.cursorrules` as the only file without one.
 - No scripts or other programs, and nothing that starts with `#!`.
 - No `package.json`, lockfile, `.npmrc` or other package-manager configuration.
 - In `.claude-plugin/`, only `plugin.json` and `marketplace.json`.
