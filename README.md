@@ -53,6 +53,13 @@ What you get:
 What the plugin runs and sends:
 
 - The MCP server `locize` connects to `https://mcp.locize.app` after you sign in with OAuth, and reads and writes your Locize projects with your own permissions.
+  Besides reading, its tools can:
+  - **change** translations, languages, versions, namespaces and branches (`update_translations`, `report_missing_keys`, `add_language`, `change_languages`, `copy_language`, `add_version`, `copy_version`, `create_branch`, `rename_namespace`); copying overwrites the target;
+  - **delete** a namespace, a version or a language with all its translations (`delete_namespace`, `delete_version`, `remove_language`), and merge a branch into its parent project (`merge_branch`);
+  - **publish** a version to the Locize CDN, from where your app loads it (`publish_version`);
+  - **use the project's AI credits** by starting an AI review (`start_ai_review`).
+
+  They cannot pay, send messages or change who has access to a project. The tools that overwrite, delete or publish are marked as destructive (MCP `destructiveHint`), and your agent asks before calling a tool you have not allowed. With a Personal Access Token, the `read` scope limits the server to the read tools.
 - The `i18next-localization` skill has the agent run [i18next-cli](https://github.com/i18next/i18next-cli) with `npx`, which downloads it from the npm registry. When you choose to connect a Locize project, the CLI uploads your translation files to the Locize API (`api.locize.app`) with that project's API key and downloads translations from Locize; without Locize it works on your local files only.
 - Nothing else: no telemetry, no other services.
 
