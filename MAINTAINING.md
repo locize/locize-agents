@@ -1,5 +1,9 @@
 # Maintaining this repo
 
+## `locize-translation-conventions` has a copy on the MCP server
+
+The Locize MCP server serves the same skill over MCP (`locize-mcp-server/skills/locize-translation-conventions/SKILL.md`), so a client without this plugin gets it too. A change to the skill here goes there as well; the server's copy differs in one line only (it says to use the `i18next-localization` skill "if it is installed").
+
 ## Refresh the vendored `i18next-localization` skill
 
 The skill's source of truth is [i18next/i18next-cli](https://github.com/i18next/i18next-cli/tree/main/skills/i18next-localization), where its drift-guard tests live. After a skill change there, run this from the repo root, then raise `version` in every manifest (`.claude-plugin/plugin.json`, `.claude-plugin/marketplace.json` twice, `plugin.json`, `gemini-extension.json`):
