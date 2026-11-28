@@ -7,13 +7,13 @@
   },
   "metadata": {
     "description": "Locize plugins for AI coding agents: i18next localization, translation conventions and the Locize MCP server.",
-    "version": "1.0.8"
+    "version": "1.0.9"
   },
   "plugins": [
     {
       "name": "locize",
       "source": "./",
-      "version": "1.0.8",
+      "version": "1.0.9",
       "description": "i18next localization skill, Locize translation conventions and the Locize MCP server (translations, glossary, style guide, translation memory, screenshots) in one plugin. Its MCP tools can change, delete and publish translations, languages, versions and namespaces in your Locize projects (see the README).",
       "category": "productivity",
       "keywords": [

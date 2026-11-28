@@ -2,7 +2,7 @@
 
 ## `locize-translation-conventions` has a copy on the MCP server
 
-The Locize MCP server serves the same skill over MCP (`locize-mcp-server/skills/locize-translation-conventions/SKILL.md`), so a client without this plugin gets it too. A change to the skill here goes there as well; the server's copy differs in one line only (it says to use the `i18next-localization` skill "if it is installed").
+The Locize MCP server serves the same skill over MCP (`locize-mcp-server/skills/locize-translation-conventions/SKILL.md`), so a client without this plugin gets it too. A change to the skill here goes there as well; the server's copy differs in one line only (it says to use the `i18next-localization` skill "if it is installed"). `CONVENTIONS.md` carries the same rules in shorter words (Gemini loads it, and users copy it into their own files), so a rule change goes there too.
 
 ## Refresh the vendored `i18next-localization` skill
 
@@ -31,3 +31,8 @@ The whole repo is the plugin, so every file in it ships with the plugin. From an
 - No scripts or other programs, and nothing that starts with `#!`.
 - No `package.json`, lockfile, `.npmrc` or other package-manager configuration.
 - In `.claude-plugin/`, only `plugin.json` and `marketplace.json`.
+- No `CLAUDE.md`, `CLAUDE.local.md` or `AGENTS.md`, in any case and in any folder. 1.0.8 passed with `CLAUDE.md` and `AGENTS.md` on 2026-11-23 and was refused for them on 11-27, so the copy-in template is `CONVENTIONS.md`.
+
+## Pushing during a review
+
+Every push is checked again, with or without a version bump, and the result replaces the one under review: a docs-only push during the review of 1.0.8 sent it back to Needs changes. Push while a version is in review only when it has to change.

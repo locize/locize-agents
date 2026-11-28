@@ -67,14 +67,10 @@ Privacy policy: <https://www.locize.com/privacy>. Support: <https://www.locize.c
 
 ## Conventions
 
-This repo is the canonical home of the agent-convention snippets. Drop the one that
-matches your tool into your project, or copy the shared rules into your existing
-`CLAUDE.md` / `AGENTS.md`.
-
-- [`CLAUDE.md`](./CLAUDE.md) — for Claude Code
-- [`AGENTS.md`](./AGENTS.md) — generic (Cursor, Codex, and other tools that read AGENTS.md)
-
-Both carry the same rules; pick the file your tool reads.
+The plugin brings these rules as the `locize-translation-conventions` skill. For a tool
+that reads a project instructions file instead, copy [`CONVENTIONS.md`](./CONVENTIONS.md)
+into the file your tool reads: `AGENTS.md` (Cursor, Codex and others) or `CLAUDE.md`
+(Claude Code). The Gemini CLI extension loads it by itself.
 
 ## Connect the Locize MCP server
 
@@ -114,7 +110,7 @@ All read-only, `read` scope:
 - Matching against source text is the agent's job — terms are returned verbatim (case as
   stored).
 
-See [CLAUDE.md](./CLAUDE.md) for the full rule text.
+See [the skill](./skills/locize-translation-conventions/SKILL.md) for the full rule text.
 
 ## Localizing an app end-to-end
 

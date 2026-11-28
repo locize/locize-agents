@@ -1,8 +1,8 @@
 {
   "name": "locize",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Locize translation management over MCP (translations, glossary, style guide, translation memory, screenshot context) plus the translation conventions agents should follow.",
-  "contextFileName": "AGENTS.md",
+  "contextFileName": "CONVENTIONS.md",
   "mcpServers": {
     "locize": {
       "httpUrl": "https://mcp.locize.app",
